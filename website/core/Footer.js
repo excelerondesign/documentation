@@ -47,6 +47,7 @@ class Footer extends React.Component {
               API Reference (or other categories)
             </a>
           </div>
+          {/*
           <div>
             <h5>Community</h5>
             <a href={this.pageUrl('users.html', this.props.language)}>
@@ -66,11 +67,12 @@ class Footer extends React.Component {
               Twitter
             </a>
           </div>
+          */}
           <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
+            <h5>Useful Links</h5>
+            <a href="https://excelerondesigns.com">Home</a>
+            <a href="https://github.com/excelerondesign">GitHub</a>
+            {/*<a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
@@ -79,7 +81,7 @@ class Footer extends React.Component {
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
               Star
-            </a>
+            </a>*/}
             {this.props.config.twitterUsername && (
               <div className="social">
                 <a
@@ -105,6 +107,7 @@ class Footer extends React.Component {
           </div>
         </section>
 
+        {/*
         <a
           href="https://opensource.facebook.com/"
           target="_blank"
@@ -117,6 +120,7 @@ class Footer extends React.Component {
             height="45"
           />
         </a>
+        */}
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
