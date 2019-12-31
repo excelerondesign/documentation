@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "cd website && npm start",
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "cd website && npm run build",
 		"publish": "cd website && GIT_USER=$GIT_USER CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages"
 	},
 	"repository": {
