@@ -44,7 +44,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/exceleron.svg',
-  footerIcon: 'img/56599097.jpg',
+  footerIcon: 'img/apple-touch-icon-152x152.png',
   favicon: 'img/apple-touch-icon-152x152.png',
 
   /* Colors for website */
