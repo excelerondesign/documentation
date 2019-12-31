@@ -15,7 +15,7 @@ const users = [
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/56599097.jpg',
-    infoLink: 'https://www.facebook.com',
+    infoLink: 'https://excelerondesigns.com/',
     pinned: true,
   },
 ];
