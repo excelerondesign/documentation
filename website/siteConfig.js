@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'Documentation', // Title for your website.
   tagline: 'Internal Documentation: Notes, Tips, Tricks, and other helpful snippets.',
-  url: 'https://dev.exceleron.com', // Your website URL
+  url: 'https://dev.excelerondesigns.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -97,6 +97,7 @@ const siteConfig = {
 
   // Show documentation's last update time.
   enableUpdateTime: true,
+  cname: 'dev.excelerondesigns.com'
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
