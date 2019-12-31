@@ -1,0 +1,21 @@
+{
+	"name": "documentation",
+	"version": "0.0.1",
+	"description": "Internal Documentation: Notes, Tips, Tricks, and other helpful snippets.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cd website && npm start",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"publish": "cd website && npm run publish-gh-pages"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/excelerondesign/documentation.git"
+	},
+	"author": "frankie-tech",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/excelerondesign/documentation/issues"
+	},
+	"homepage": "https://github.com/excelerondesign/documentation#readme"
+}
