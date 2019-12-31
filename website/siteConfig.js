@@ -14,7 +14,7 @@ const users = [
     caption: 'Exceleron Designs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
+    image: '/img/56599097.jpg',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
@@ -44,8 +44,8 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/exceleron.svg',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  footerIcon: 'img/56599097.jpg',
+  favicon: 'img/apple-touch-icon-152x152.png',
 
   /* Colors for website */
   colors: {
