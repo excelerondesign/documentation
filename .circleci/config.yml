@@ -11,16 +11,16 @@ jobs:
   steps:
     - checkout
     - run:
-      name: Deploying to GitHub Pages
-      command: |
-        git config --global user.email "$GIT_EMAIL"
-        git config --global user.name "$GIT_NAME"
-        echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
-        cd website && yarn install && GIT_USER=$GIT_USER yarn run publish-gh-pages
+        name: Deploying to GitHub Pages
+        command: |
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_NAME"
+          echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
+          cd website && yarn install && GIT_USER=$GIT_USER yarn run publish-gh-pages
 
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - deploy-website:
-        filters: *filter-only-master
+          filters: *filter-only-master
