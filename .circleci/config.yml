@@ -7,16 +7,21 @@ jobs:
 
     steps:
       - checkout
+      - run: 
+          name: Set Email
+          command: git config --global user.email "$GIT_EMAIL"
+      - run:
+          name: Set Username
+          command: git config --global user.name "Connor"
+      - run:
+          name: Login to Github
+          command: echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
       - run:
           name: Deploying to GitHub Pages
-          command: |
-            git config --global user.email "$GIT_EMAIL"
-            git config --global user.name "Connor"
-            echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
-            cd website && npm install && GIT_USER=$GIT_USER npm run publish-gh-pages
-
+          command: cd website && npm install && GIT_USER=$GIT_USER npm run publish-gh-pages
+            
 workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - deploy-website:
+      - deploy-website
