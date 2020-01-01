@@ -1,10 +1,10 @@
+version: 2
 aliases:
   - &filter-only-master
     branches:
       only:
         - master
 
-version: 2
 jobs:
   deploy-website:
     docker:
@@ -18,7 +18,7 @@ jobs:
           command: git config --global user.email "$GIT_EMAIL"
       - run:
           name: Set Username
-          command: git config --global user.name "Connor"
+          command: git config --global user.name "$GIT_USER"
       - run:
           name: Login to Github
           command: echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
