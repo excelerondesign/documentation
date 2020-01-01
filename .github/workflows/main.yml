@@ -17,12 +17,12 @@ jobs:
       with:
         node-version: 10.x 
     - name: Set email
-      run: git config --global user.email "excelerondesign@users.noreply.github.com"
+      run: git config --global user.email "frankie-tech@users.noreply.github.com"
     - name: Set username
-      run: git config --global user.name "excelerondesign"
+      run: git config --global user.name "frankie-tech"
     - name: Move to website dir
       run: cd website
-    - name: Install docusaurus
+    - name: NPM Install
       run: npm install
     - name: Run publish command
       run: GIT_USER=$GIT_USER npm run publish-gh-pages
