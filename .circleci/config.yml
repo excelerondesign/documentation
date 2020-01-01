@@ -1,3 +1,9 @@
+aliases:
+  - &filter-only-master
+    branches:
+      only:
+        - master
+
 version: 2
 jobs:
   deploy-website:
@@ -18,10 +24,11 @@ jobs:
           command: echo "machine github.com login $GIT_USER password $GITHUB_TOKEN" > ~/.netrc
       - run:
           name: Deploying to GitHub Pages
-          command: cd website && npm install && GIT_USER=$GIT_USER npm run publish-gh-pages
+          command: cd website && npm install && GIT_USER=\$GIT_USER npm run publish-gh-pages
             
 workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - deploy-website
+      - deploy-website:
+        filters: *filter-only-master
