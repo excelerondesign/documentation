@@ -24,8 +24,6 @@ jobs:
         do
           echo $file
         done
-    - name: Move to website dir
-      run: cd website
     - name: NPM install command
       run: npm install
     - name: Run publish command
