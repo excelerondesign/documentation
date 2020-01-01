@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x 
+    - name: Set email
+      run: git config --global user.email "excelerondesign@users.noreply.github.com"
+    - name: Set username
+      run: git config --global user.name "excelerondesign"
+    - name: Move to website dir
+      run: cd website
+    - name: Install docusaurus
+      run: npm install
+    - name: Run publish command
+      run: GIT_USER=$GIT_USER npm run publish-gh-pages
