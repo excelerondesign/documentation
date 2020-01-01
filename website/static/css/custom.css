@@ -6,7 +6,12 @@
  */
  
 /* your custom css */
-
+.mainContainer {
+    padding-bottom: 0;
+}
+.nav-footer .sitemap .nav-home {
+    opacity: 1;
+}
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
