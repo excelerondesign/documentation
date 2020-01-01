@@ -1,6 +1,12 @@
 {
 	"docs": {
-		"Style Guide": [ "style-guide" ],
+		"Style Guide": [
+			"style-guide/style-guide",
+			"style-guide/style-guide-css",
+			"style-guide/style-guide-html",
+			"style-guide/style-guide-js",
+			"style-guide/style-guide-modx"
+		],
 		"HTML": [ "HTML/html-start", "HTML/styling-selects" ]
 	}
 }
