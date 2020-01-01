@@ -18,7 +18,7 @@ jobs:
       run: git config --global user.name "${{ secrets.adminname }}"
     - name: Move to website dir
       run: cd website
-    - name: NPM Install
+    - name: NPM install command
       run: npm install
     - name: Run publish command
       run: GIT_USER=$GIT_USER npm run publish-gh-pages
