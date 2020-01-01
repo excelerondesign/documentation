@@ -16,8 +16,6 @@ jobs:
       run: git config --global user.email "${{ secrets.adminemail }}"
     - name: Set username
       run: git config --global user.name "${{ secrets.adminname }}"
-    - name: Check dir
-      run: echo $PWD
     - name: Echo contents
       run: |
         for file in $PWD/*
@@ -30,6 +28,8 @@ jobs:
       run: cat package.json
     - name: Run build command
       run: npm run build
+    - name: Check dir
+      run: echo $PWD
     - name: Deploy to Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
