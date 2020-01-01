@@ -1,11 +1,6 @@
 {
 	"docs": {
-		"HTML": [ "HTML/html-start", "HTML/styling-selects" ],
-		"Docusaurus": [ "doc1" ],
-		"First Category": [ "doc2" ],
-		"Second Category": [ "doc3" ]
-	},
-	"docs-other": {
-		"First Category": [ "doc4", "doc5" ]
+		"Style Guide": [ "style-guide" ],
+		"HTML": [ "HTML/html-start", "HTML/styling-selects" ]
 	}
 }
