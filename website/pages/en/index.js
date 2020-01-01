@@ -200,7 +200,8 @@ class Index extends React.Component {
           <Block background="light" layout="fourColumn">
             {[
               {
-                "title": ""
+                "title": "This is a test title",
+                "content": `Welcome to our documentation, click around and see what you can learn.`
               }
             ]}
           </Block>
