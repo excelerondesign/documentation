@@ -14,7 +14,8 @@ select {
   appearance: none;
 }
 ```
-This sets the `appearance` back to initial, and gives complete style control back to us.
+This sets the `appearance` back to initial, and gives complete style control back to us.  
+*You need to include all the prefixes for proper coverage of modern browsers*
 
 See below example:
 <style>
