@@ -29,4 +29,4 @@ jobs:
     - name: check package.json
       run: cat package.json
     - name: Run publish command
-      run: GIT_USER=$GIT_USER npm run publish-gh-pages
+      run: npm run publish
