@@ -18,6 +18,12 @@ jobs:
       run: git config --global user.name "${{ secrets.adminname }}"
     - name: Check dir
       run: echo $PWD
+    - name: Echo contents
+      run: |
+        for file in $PWD
+        do
+          echo $file
+        done
     - name: Move to website dir
       run: cd website
     - name: NPM install command
