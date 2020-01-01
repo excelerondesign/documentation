@@ -1,9 +1,9 @@
 version: 2
 aliases:
   - &filter-only-master
-    branches:
-      only:
-        - master
+      branches:
+        only:
+          - master
 jobs:
   deploy-website:
     docker:
