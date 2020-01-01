@@ -30,6 +30,7 @@ jobs:
         do
           echo $file
         done
+    - uses: actions/checkout@v1
     - name: Deploy to Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
