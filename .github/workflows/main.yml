@@ -20,7 +20,7 @@ jobs:
       run: echo $PWD
     - name: Echo contents
       run: |
-        for file in $PWD
+        for file in $PWD/*
         do
           echo $file
         done
