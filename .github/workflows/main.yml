@@ -16,6 +16,8 @@ jobs:
       run: git config --global user.email "${{ secrets.adminemail }}"
     - name: Set username
       run: git config --global user.name "${{ secrets.adminname }}"
+    - name: Check dir
+      run: echo $PWD
     - name: Move to website dir
       run: cd website
     - name: NPM install command
