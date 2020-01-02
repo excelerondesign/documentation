@@ -20,13 +20,13 @@ jobs:
       - name: npm install command
         run: cd website && npm install
       - name: Run build command
-        run: cd website && GIT_USER=${{ secrets.adminname }} BRANCH=master npm run publish-gh-pages
-#       - name: Checkout
-#         uses: actions/checkout@v1
-#       - name: Deploy
-#         uses: JamesIves/github-pages-deploy-action@releases/v3
-#         with:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           BASE_BRANCH: master
-#           BRANCH: gh-pages # The branch the action should deploy to.
-#           FOLDER: website/build # The folder the action should deploy.
+        run: cd website && npm run build
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_BRANCH: master
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: website/build # The folder the action should deploy.
