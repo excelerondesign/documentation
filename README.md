@@ -2,4 +2,4 @@
 
 For tutorial on how to set up local dev environment, look here: [:link:](https://dev.excelerondesigns.com/)
 
-Uses Docusaurus to generate documentation based on markdown files: [:t-rex:](https://docusaurus.io/en/)
+Uses Docusaurus to generate documentation based on markdown files: [🦖](https://docusaurus.io/en/)
