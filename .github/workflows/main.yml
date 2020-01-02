@@ -21,8 +21,6 @@ jobs:
         run: cd website && npm install
       - name: Run build command
         run: cd website && npm run build && ls
-      - name: Checkout
-        uses: actions/checkout@v1
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
