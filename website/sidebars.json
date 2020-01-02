@@ -7,6 +7,14 @@
 			"style-guide/style-guide-js",
 			"style-guide/style-guide-modx"
 		],
-		"HTML": [ "HTML/html-start", "HTML/styling-selects" ]
+		"HTML": [ "html/html-start", "html/styling-selects" ],
+		"CSS": [],
+		"Javascript": [],
+		"Performance": [],
+		"PHP": [],
+		"MODx": [],
+		"WordPress": [],
+		"Responsiveness": [],
+		"Accessibility": []
 	}
 }
