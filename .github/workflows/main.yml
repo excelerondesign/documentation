@@ -20,7 +20,7 @@ jobs:
       - name: npm install command
         run: cd website && npm install
       - name: Run build command
-        run: npm run publish-gh-pages
+        run: cd website && npm run publish-gh-pages
 #       - name: Checkout
 #         uses: actions/checkout@v1
 #       - name: Deploy
