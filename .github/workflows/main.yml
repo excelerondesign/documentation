@@ -27,5 +27,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: master
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: website/build # The folder the action should deploy.
+          FOLDER: website/build/documentation # The folder the action should deploy.
           TARGET_FOLDER: .
