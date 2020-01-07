@@ -7,6 +7,7 @@
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
+const https = require('https');
 
 // List of projects/orgs using your project for the users page.
 const users = [
@@ -14,10 +15,10 @@ const users = [
     caption: 'Exceleron Designs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/56599097.jpg',
+    image: '/img/users/56599097.jpg',
     infoLink: 'https://excelerondesigns.com/',
     pinned: true,
-  },
+  }
 ];
 
 const siteConfig = {

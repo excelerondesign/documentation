@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.3"
+  },
+  "dependencies": {
+    "unfetch": "^4.1.0"
   }
 }

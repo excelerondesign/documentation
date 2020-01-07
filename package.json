@@ -18,5 +18,6 @@
 	"bugs": {
 		"url": "https://github.com/excelerondesign/documentation/issues"
 	},
-	"homepage": "https://github.com/excelerondesign/documentation#readme"
+	"homepage": "https://github.com/excelerondesign/documentation#readme",
+	"dependencies": {}
 }
