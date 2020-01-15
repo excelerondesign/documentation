@@ -3,3 +3,9 @@
 _For tutorial on how to set up local dev environment, look here:_ [:link:](https://dev.excelerondesigns.com/)
 
 _Uses Docusaurus to generate documentation based on markdown files:_ [🦖](https://docusaurus.io/en/)
+
+### Move site over to using Docsify
+
+-   simpler configuration
+-   uses a simpler theming program
+-   seems to actually be supported well
