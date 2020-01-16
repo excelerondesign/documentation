@@ -1,3 +1,3 @@
--   [/Home](/)
+-   [Home](/)
 -   Style Guide
     -   [HTML](./style-guide/style-guide-html.md)
