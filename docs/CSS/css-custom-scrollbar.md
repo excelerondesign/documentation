@@ -1,8 +1,3 @@
----
-id: css-custom-scrollbar
-title: Custom Scrollbar
----
-
 https://codepen.io/stevenlewis/pen/hubpL
 
 #### Always visible scrollbar
