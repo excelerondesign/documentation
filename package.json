@@ -4,10 +4,7 @@
 	"description": "Internal Documentation: Notes, Tips, Tricks, and other helpful snippets.",
 	"main": "index.js",
 	"scripts": {
-		"dev": "cd website && npm start",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "cd website && npm run build",
-		"publish": "npm run build && cd website && GIT_USER=$GIT_USER CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages"
+		"serve": "docsify serve docs --open --port 1234"
 	},
 	"repository": {
 		"type": "git",
