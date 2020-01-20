@@ -1,3 +1,3 @@
 -   [Home](/)
--   Style Guide
-    -   [HTML](./style-guide/style-guide-html.md)
+-   [Style Guides](style-guide/style-guide.md)
+-   [CSS](css/css-custom-scrollbar.md)
